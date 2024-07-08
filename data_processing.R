@@ -1,3 +1,4 @@
+# Loading packages
 library("readr")
 library("readxl")
 library("dplyr")
@@ -5,34 +6,16 @@ library("writexl")
 
 # Function to extract information and save to Excel sheets
 extract_and_save_to_excel <- function(folder_path, excel_output_path) {
-  # Get a list of all files in the folder
   file_paths <- list.files(path = folder_path, full.names = TRUE)
-  
-  # Print the files found in the directory
-  print(paste("Files found:", file_paths))
-  
-  # Initialize a list to store data frames for each file
   sheet_list <- list()
   
-  # Loop through each file path
   for (file_path in file_paths) {
-    print(paste("Processing file:", file_path))
-    
-    # Read the file
     lines <- read_lines(file_path)
-    
-    # Print the first few lines for debugging
-    print(head(lines))
-    
-    # Initialize lists to store the extracted information
     location_codes <- c()
     latitudes <- c()
     longitudes <- c()
-    
-    # Initialize a variable to store the current location code
     location_code <- NULL
     
-    # Loop through the lines and extract relevant information
     for (i in seq_along(lines)) {
       line <- lines[i]
       
