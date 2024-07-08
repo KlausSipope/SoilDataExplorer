@@ -6,7 +6,6 @@ library("writexl")
 
 # Function to extract information and save to Excel sheets
 extract_and_save_to_excel <- function(folder_path, excel_output_path) {
-  file_paths <- list.files(path = folder_path, full.names = TRUE)
   sheet_list <- list()
   
   for (file_path in file_paths) {
@@ -69,7 +68,7 @@ extract_and_save_to_excel <- function(folder_path, excel_output_path) {
   cat("Data has been successfully written to", excel_output_path, "\n")
 }
 
-# Usage
+# Example usage
 folder_path <- "/folder_path"
 excel_output_path <- "excel_output_path"
 extract_and_save_to_excel(folder_path, excel_output_path)
