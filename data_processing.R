@@ -69,7 +69,7 @@ extract_and_save_to_excel <- function(folder_path, excel_output_path) {
   cat("Data has been successfully written to", excel_output_path, "\n")
 }
 
-# Example usage
+# Usage
 folder_path <- "/folder_path"
 excel_output_path <- "excel_output_path"
 extract_and_save_to_excel(folder_path, excel_output_path)
