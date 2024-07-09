@@ -1,5 +1,5 @@
 # SoilDataExplorer
-SoilDataExplorer is a project designed to extract soil profile data from multiple country files, organize the data into an Excel file, and build a Shiny app that allows users to query soil profile information based on latitude and longitude. The project is divided into two main objectives: data extraction and Shiny app development.
+SoilDataExplorer is a project designed to extract soil profile data from multiple country soil files, organize the data into an Excel file, and build a Shiny app that allows users to query soil profile information based on latitude and longitude. The project is divided into two main objectives: data extraction and Shiny app development.
 
 ---
 
